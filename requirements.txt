@@ -6,3 +6,6 @@ tensorflow
 torch
 pandas
 scikit-learn
+numpy
+textblob
+joblib
