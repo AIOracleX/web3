@@ -14,7 +14,7 @@ OracleX is a decentralized AI-powered price prediction platform designed for the
 
 *   **Blockchain:** Base (Ethereum L2)
 *   **Programming Languages:** Python, Solidity, JavaScript
-*   **Machine Learning Libraries:** TensorFlow, PyTorch
+*   **Machine Learning Libraries:** TensorFlow, PyTorch, scikit-learn
 *   **Cloud Platform:** AWS
 *   **API Framework:** Flask
 
@@ -22,7 +22,7 @@ OracleX is a decentralized AI-powered price prediction platform designed for the
 
 1.  Clone the repository:
     ```bash
-    git clone [https://github.com/AIOracleX/web3/](https://github.com/AIOracleX/web3/)
+    git clone [https://github.com/AIOracleX/web3/]
     ```
 2.  Install dependencies:
     ```bash
@@ -32,7 +32,21 @@ OracleX is a decentralized AI-powered price prediction platform designed for the
 
 ## Usage
 
+1.  Set up environment variables:
+    Create a `.env` file based on the provided `.env.example` and fill in your Alchemy API URL.
+
+2.  Run the Flask application:
+    ```bash
+    python app.py
+    ```
+
 Refer to the API documentation for detailed instructions on how to integrate the OracleX price prediction API into your application.
+
+## API Endpoints
+* `/predictions/<asset>` (GET): Retrieve price predictions for a specific asset.
+* `/predictions/<asset>/history` (GET): Get historical predictions for a specific asset.
+* `/metrics` (GET): Get the latest evaluation metrics for each prediction model.
+* `/sentiment/<asset>` (GET): Retrieve the current sentiment for a given asset, gathered from social media and news sources.
 
 ## Tokenomics
 
@@ -57,7 +71,3 @@ Contributions to the OracleX project are welcome. Please refer to the contributi
 ## License
 
 This project is licensed under the MIT License.
-
-## Contact
-
-For any inquiries, please contact us at [email protected]
